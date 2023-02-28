@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="imagenes/diploma.ico"> <!--- Esto es para cambiar el icono en la pestaña -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="https://kit.fontawesome.com/a1ff86f1d2.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt Warp:wght@100&display=swap" rel="stylesheet">
+
+  </head>
+  <body>    
+    <nav class="barra-navegacion">
+      <ul>        
+        <li><a href="#informacion-personal">Información Personal</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="foto">
+        <img src="imagenes/foto.jpg" alt="Mi foto">
+      </div>
+      <div class="informacion-personal" id="informacion-personal">
+        <h1>Christian Barnasthpol</h1>
+        <h2>Estudiante Front End Academy 2022</h2>
+      </div>
+    </header>
+    <main>
+      <section class="educacion" id="educacion">
+        <h2>Educación</h2>
+        <ul>
+            <li><i class="fa-solid fa-certificate"></i> Master, Programación HTML Avanzada, 2025</li>
+            <li><i class="fa-solid fa-certificate"></i> Licenciatura en casi todo, 1990</li>
+            <li><i class="fa-solid fa-certificate"></i> Ingeniería en Sistemas 1980</li>
+            <li><i class="fa-solid fa-certificate"></i> Posgrado en Networking</li>
+            <li><i class="fa-solid fa-certificate"></i> CCNA 2010</li>
+            <li><i class="fa-solid fa-certificate"></i> Ingeniería en Software 2005</li>
+        </ul>
+      </section>
+      <section class="experiencia" id="experiencia">
+        <h2>Experiencia</h2>
+        <ul>
+			<li><i class="fa-brands fa-apple"></i> CEO, Apple (2010-actualidad)</li>
+			<li><i class="fa-brands fa-google"></i> Director General, Google (2000-2010)</li>
+			<li><i class="fa-brands fa-microsoft"></i> Gerente General, Microsoft (1990-2000)</li>
+            <li><i class="fa-brands fa-amazon"></i> Gerente, Amazon (1980-1990)</li>
+        </ul>
+      </section>
+      <section class="habilidades" id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+			<li><i class="fab fa-html5"></i> HTML, </li>
+			<li><i class="fab fa-css3-alt"></i> CSS</li>
+			<li><i class="fab fa-js"></i> JavaScript</li>
+			<li><i class="fab fa-php"></i> PHP</li>
+			<li><i class="fas fa-database"></i> MySQL</li>
+        </ul>
+
+        <!--- Esta es la información de contacto-->
+
+      </section>
+      <button id="boton-informacion"><i class="fas fa-info-circle"></i> Más información</button>
+      <div id="informacion-complementaria">
+        <p>Mucha experiencia en relaciones humanas y trabajo en equipo.</p>
+      </div>
+
+      <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Calle 60 N° 1, La Plata</li>
+          <li><i class="fas fa-envelope"></i> cbarnasthpol@gmail.com</li>
+          <li><i class="fas fa-phone"></i> (0221) 987-7890</li>
+        </ul>
+
+        <!--- Este es el formulario de contacto-->
+
+        <form>
+			<label for="nombre"><i class="fas fa-user"></i> Nombre:</label>
+			<input type="text" id="nombre" name="nombre"><br>
+
+			<label for="correo"><i class="fas fa-envelope"></i> Correo electrónico:</label>
+			<input type="email" id="correo" name="correo"><br>
+
+            <p></p>
+
+			<label for="mensaje"><i class="fas fa-comment"></i> Mensaje:</label>
+			<textarea id="mensaje" name="mensaje"></textarea><br>
+
+            <p></p>
+
+			<input type="submit" value="Enviar">
+		</form>
+
+      </section>
+    </main>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>
